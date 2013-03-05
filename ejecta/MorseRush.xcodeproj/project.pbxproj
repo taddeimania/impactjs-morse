@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		5B7B76761619DB9700691910 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7B76751619DB9700691910 /* CoreText.framework */; };
+		B6074FF315F8E41700D987F9 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6074FF215F8E41600D987F9 /* GameKit.framework */; };
+		B607AB67132EA6C300D7C3EA /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B607AB66132EA6C300D7C3EA /* OpenAL.framework */; };
+		B607AC33132EA75F00D7C3EA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B607AC32132EA75F00D7C3EA /* AudioToolbox.framework */; };
+		B607AD0A132EB51000D7C3EA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B607AD09132EB51000D7C3EA /* OpenGLES.framework */; };
+		B607AD10132EB52400D7C3EA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B607AD0F132EB52400D7C3EA /* QuartzCore.framework */; };
+		B6243666166684420046B8C7 /* libJavaScriptCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B64CE60C1666825F0087CF94 /* libJavaScriptCore.a */; };
+		B62436681666851E0046B8C7 /* Ejecta.js in Resources */ = {isa = PBXBuildFile; fileRef = B64CE63F166682700087CF94 /* Ejecta.js */; };
+		B64CE662166682700087CF94 /* EJApp.m in Sources */ = {isa = PBXBuildFile; fileRef = B64CE611166682700087CF94 /* EJApp.m */; };
+		B64CE663166682700087CF94 /* EJAudioSourceAVAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = B64CE615166682700087CF94 /* EJAudioSourceAVAudio.m */; };
+		B64CE664166682700087CF94 /* EJAudioSourceOpenAL.m in Sources */ = {isa = PBXBuildFile; fileRef = B64CE617166682700087CF94 /* EJAudioSourceOpenAL.m */; };
+		B64CE665166682700087CF94 /* EJBindingAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = B64CE619166682700087CF94 /* EJBindingAudio.m */; };
+		B64CE666166682700087CF94 /* EJOpenALBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = B64CE61B166682700087CF94 /* EJOpenALBuffer.m */; };
+		B64CE667166682700087CF94 /* EJOpenALManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B64CE61D166682700087CF94 /* EJOpenALManager.m */; };
+		B64CE668166682700087CF94 /* EJBindingBase.m in Sources */ = {isa = PBXBuildFile; fileRef = B64CE61F166682700087CF94 /* EJBindingBase.m */; };
+		B64CE669166682700087CF94 /* EJBindingEjectaCore.m in Sources */ = {isa = PBXBuildFile; fileRef = B64CE621166682700087CF94 /* EJBindingEjectaCore.m */; };
+		B64CE66A166682700087CF94 /* EJBindingEventedBase.m in Sources */ = {isa = PBXBuildFile; fileRef = B64CE623166682700087CF94 /* EJBindingEventedBase.m */; };
+		B64CE66B166682700087CF94 /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = B64CE626166682700087CF94 /* EAGLView.m */; };
+		B64CE66C166682700087CF94 /* EJBindingCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = B64CE628166682700087CF94 /* EJBindingCanvas.m */; };
+		B64CE66D166682700087CF94 /* EJBindingImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B64CE62A166682700087CF94 /* EJBindingImage.m */; };
+		B64CE66E166682700087CF94 /* EJBindingImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = B64CE62C166682700087CF94 /* EJBindingImageData.m */; };
+		B64CE66F166682700087CF94 /* EJCanvasContext.m in Sources */ = {isa = PBXBuildFile; fileRef = B64CE62E166682700087CF94 /* EJCanvasContext.m */; };
+		B64CE670166682700087CF94 /* EJCanvasContextScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B64CE630166682700087CF94 /* EJCanvasContextScreen.m */; };
+		B64CE671166682700087CF94 /* EJCanvasContextTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = B64CE632166682700087CF94 /* EJCanvasContextTexture.m */; };
+		B64CE672166682700087CF94 /* EJFont.mm in Sources */ = {isa = PBXBuildFile; fileRef = B64CE636166682700087CF94 /* EJFont.mm */; };
+		B64CE673166682700087CF94 /* EJImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = B64CE638166682700087CF94 /* EJImageData.m */; };
+		B64CE674166682700087CF94 /* EJPath.mm in Sources */ = {isa = PBXBuildFile; fileRef = B64CE63A166682700087CF94 /* EJPath.mm */; };
+		B64CE675166682700087CF94 /* EJTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = B64CE63C166682700087CF94 /* EJTexture.m */; };
+		B64CE676166682700087CF94 /* EJConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = B64CE63E166682700087CF94 /* EJConvert.m */; };
+		B64CE678166682700087CF94 /* EJTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = B64CE641166682700087CF94 /* EJTimer.m */; };
+		B64CE679166682700087CF94 /* EJBindingAccelerometer.m in Sources */ = {isa = PBXBuildFile; fileRef = B64CE644166682700087CF94 /* EJBindingAccelerometer.m */; };
+		B64CE67A166682700087CF94 /* EJBindingAdBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = B64CE646166682700087CF94 /* EJBindingAdBanner.m */; };
+		B64CE67B166682700087CF94 /* EJBindingGameCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = B64CE648166682700087CF94 /* EJBindingGameCenter.m */; };
+		B64CE67C166682700087CF94 /* EJBindingHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B64CE64A166682700087CF94 /* EJBindingHttpRequest.m */; };
+		B64CE67D166682700087CF94 /* EJBindingLocalStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = B64CE64C166682700087CF94 /* EJBindingLocalStorage.m */; };
+		B64CE67E166682700087CF94 /* EJBindingTouchInput.m in Sources */ = {isa = PBXBuildFile; fileRef = B64CE64E166682700087CF94 /* EJBindingTouchInput.m */; };
+		B64CE67F166682700087CF94 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B64CE651166682700087CF94 /* AppDelegate.m */; };
+		B64CE681166682700087CF94 /* lodepng.c in Sources */ = {isa = PBXBuildFile; fileRef = B64CE65F166682700087CF94 /* lodepng.c */; };
+		B64CE682166682700087CF94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B64CE661166682700087CF94 /* main.m */; };
+		B64CE68F166682B10087CF94 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B64CE684166682B10087CF94 /* Default-568h@2x.png */; };
+		B64CE690166682B10087CF94 /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = B64CE685166682B10087CF94 /* Default-Landscape.png */; };
+		B64CE691166682B10087CF94 /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = B64CE686166682B10087CF94 /* Default-Portrait.png */; };
+		B64CE692166682B10087CF94 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B64CE687166682B10087CF94 /* Default.png */; };
+		B64CE693166682B10087CF94 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B64CE688166682B10087CF94 /* Default@2x.png */; };
+		B64CE695166682B10087CF94 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = B64CE68A166682B10087CF94 /* Icon-72.png */; };
+		B64CE696166682B10087CF94 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B64CE68B166682B10087CF94 /* Icon-72@2x.png */; };
+		B64CE697166682B10087CF94 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B64CE68C166682B10087CF94 /* Icon.png */; };
+		B64CE698166682B10087CF94 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B64CE68D166682B10087CF94 /* Icon@2x.png */; };
+		B64CE699166682B10087CF94 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B64CE68E166682B10087CF94 /* MainWindow.xib */; };
+		B66F1E801476B6A40090D208 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B66F1E7F1476B6A40090D208 /* libstdc++.dylib */; };
+		B66F1E811476B6B90090D208 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B66F1E771476B3AC0090D208 /* libicucore.dylib */; };
+		B68C5B95132E6CD60015092E /* App in Resources */ = {isa = PBXBuildFile; fileRef = B68C5AEF132E6CD60015092E /* App */; };
+		B6AC4A061359E7A5003C4982 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6AC4A051359E7A5003C4982 /* iAd.framework */; };
+		B6CFCCD91332F152001F17AF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6CFCCD81332F152001F17AF /* AVFoundation.framework */; };
+		B6F463A41636C3FB00FC89C1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F463A31636C3FA00FC89C1 /* SystemConfiguration.framework */; };
+		B6F9AFC0169F81D400ABD91A /* EJBindingLifecycle.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F9AFBF169F81D400ABD91A /* EJBindingLifecycle.m */; };
+		D03A0FCA16E42A0C00B3E29F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D03A0FC716E4293D00B3E29F /* Default.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D6058910D05DD3D006BFB54 /* MorseRush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MorseRush.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5B7B76751619DB9700691910 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		B6074FF215F8E41600D987F9 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		B607AB66132EA6C300D7C3EA /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		B607AC32132EA75F00D7C3EA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B607AD09132EB51000D7C3EA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		B607AD0F132EB52400D7C3EA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B64CE60C1666825F0087CF94 /* libJavaScriptCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJavaScriptCore.a; path = Source/lib/libJavaScriptCore.a; sourceTree = "<group>"; };
+		B64CE610166682700087CF94 /* EJApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJApp.h; sourceTree = "<group>"; };
+		B64CE611166682700087CF94 /* EJApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJApp.m; sourceTree = "<group>"; };
+		B64CE613166682700087CF94 /* EJAudioSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJAudioSource.h; sourceTree = "<group>"; };
+		B64CE614166682700087CF94 /* EJAudioSourceAVAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJAudioSourceAVAudio.h; sourceTree = "<group>"; };
+		B64CE615166682700087CF94 /* EJAudioSourceAVAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJAudioSourceAVAudio.m; sourceTree = "<group>"; };
+		B64CE616166682700087CF94 /* EJAudioSourceOpenAL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJAudioSourceOpenAL.h; sourceTree = "<group>"; };
+		B64CE617166682700087CF94 /* EJAudioSourceOpenAL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJAudioSourceOpenAL.m; sourceTree = "<group>"; };
+		B64CE618166682700087CF94 /* EJBindingAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingAudio.h; sourceTree = "<group>"; };
+		B64CE619166682700087CF94 /* EJBindingAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingAudio.m; sourceTree = "<group>"; };
+		B64CE61A166682700087CF94 /* EJOpenALBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJOpenALBuffer.h; sourceTree = "<group>"; };
+		B64CE61B166682700087CF94 /* EJOpenALBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJOpenALBuffer.m; sourceTree = "<group>"; };
+		B64CE61C166682700087CF94 /* EJOpenALManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJOpenALManager.h; sourceTree = "<group>"; };
+		B64CE61D166682700087CF94 /* EJOpenALManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJOpenALManager.m; sourceTree = "<group>"; };
+		B64CE61E166682700087CF94 /* EJBindingBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingBase.h; sourceTree = "<group>"; };
+		B64CE61F166682700087CF94 /* EJBindingBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingBase.m; sourceTree = "<group>"; };
+		B64CE620166682700087CF94 /* EJBindingEjectaCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingEjectaCore.h; sourceTree = "<group>"; };
+		B64CE621166682700087CF94 /* EJBindingEjectaCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingEjectaCore.m; sourceTree = "<group>"; };
+		B64CE622166682700087CF94 /* EJBindingEventedBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingEventedBase.h; sourceTree = "<group>"; };
+		B64CE623166682700087CF94 /* EJBindingEventedBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingEventedBase.m; sourceTree = "<group>"; };
+		B64CE625166682700087CF94 /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		B64CE626166682700087CF94 /* EAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		B64CE627166682700087CF94 /* EJBindingCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingCanvas.h; sourceTree = "<group>"; };
+		B64CE628166682700087CF94 /* EJBindingCanvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingCanvas.m; sourceTree = "<group>"; };
+		B64CE629166682700087CF94 /* EJBindingImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingImage.h; sourceTree = "<group>"; };
+		B64CE62A166682700087CF94 /* EJBindingImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingImage.m; sourceTree = "<group>"; };
+		B64CE62B166682700087CF94 /* EJBindingImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingImageData.h; sourceTree = "<group>"; };
+		B64CE62C166682700087CF94 /* EJBindingImageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingImageData.m; sourceTree = "<group>"; };
+		B64CE62D166682700087CF94 /* EJCanvasContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJCanvasContext.h; sourceTree = "<group>"; };
+		B64CE62E166682700087CF94 /* EJCanvasContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJCanvasContext.m; sourceTree = "<group>"; };
+		B64CE62F166682700087CF94 /* EJCanvasContextScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJCanvasContextScreen.h; sourceTree = "<group>"; };
+		B64CE630166682700087CF94 /* EJCanvasContextScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJCanvasContextScreen.m; sourceTree = "<group>"; };
+		B64CE631166682700087CF94 /* EJCanvasContextTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJCanvasContextTexture.h; sourceTree = "<group>"; };
+		B64CE632166682700087CF94 /* EJCanvasContextTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJCanvasContextTexture.m; sourceTree = "<group>"; };
+		B64CE633166682700087CF94 /* EJCanvasTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJCanvasTypes.h; sourceTree = "<group>"; };
+		B64CE634166682700087CF94 /* EJDrawable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJDrawable.h; sourceTree = "<group>"; };
+		B64CE635166682700087CF94 /* EJFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJFont.h; sourceTree = "<group>"; };
+		B64CE636166682700087CF94 /* EJFont.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EJFont.mm; sourceTree = "<group>"; };
+		B64CE637166682700087CF94 /* EJImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJImageData.h; sourceTree = "<group>"; };
+		B64CE638166682700087CF94 /* EJImageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJImageData.m; sourceTree = "<group>"; };
+		B64CE639166682700087CF94 /* EJPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJPath.h; sourceTree = "<group>"; };
+		B64CE63A166682700087CF94 /* EJPath.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EJPath.mm; sourceTree = "<group>"; };
+		B64CE63B166682700087CF94 /* EJTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJTexture.h; sourceTree = "<group>"; };
+		B64CE63C166682700087CF94 /* EJTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJTexture.m; sourceTree = "<group>"; };
+		B64CE63D166682700087CF94 /* EJConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJConvert.h; sourceTree = "<group>"; };
+		B64CE63E166682700087CF94 /* EJConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJConvert.m; sourceTree = "<group>"; };
+		B64CE63F166682700087CF94 /* Ejecta.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Ejecta.js; sourceTree = "<group>"; };
+		B64CE640166682700087CF94 /* EJTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJTimer.h; sourceTree = "<group>"; };
+		B64CE641166682700087CF94 /* EJTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJTimer.m; sourceTree = "<group>"; };
+		B64CE643166682700087CF94 /* EJBindingAccelerometer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingAccelerometer.h; sourceTree = "<group>"; };
+		B64CE644166682700087CF94 /* EJBindingAccelerometer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingAccelerometer.m; sourceTree = "<group>"; };
+		B64CE645166682700087CF94 /* EJBindingAdBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingAdBanner.h; sourceTree = "<group>"; };
+		B64CE646166682700087CF94 /* EJBindingAdBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingAdBanner.m; sourceTree = "<group>"; };
+		B64CE647166682700087CF94 /* EJBindingGameCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingGameCenter.h; sourceTree = "<group>"; };
+		B64CE648166682700087CF94 /* EJBindingGameCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingGameCenter.m; sourceTree = "<group>"; };
+		B64CE649166682700087CF94 /* EJBindingHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingHttpRequest.h; sourceTree = "<group>"; };
+		B64CE64A166682700087CF94 /* EJBindingHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingHttpRequest.m; sourceTree = "<group>"; };
+		B64CE64B166682700087CF94 /* EJBindingLocalStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingLocalStorage.h; sourceTree = "<group>"; };
+		B64CE64C166682700087CF94 /* EJBindingLocalStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingLocalStorage.m; sourceTree = "<group>"; };
+		B64CE64D166682700087CF94 /* EJBindingTouchInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingTouchInput.h; sourceTree = "<group>"; };
+		B64CE64E166682700087CF94 /* EJBindingTouchInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingTouchInput.m; sourceTree = "<group>"; };
+		B64CE64F166682700087CF94 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		B64CE650166682700087CF94 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B64CE651166682700087CF94 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B64CE654166682700087CF94 /* JavaScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScript.h; sourceTree = "<group>"; };
+		B64CE655166682700087CF94 /* JavaScriptCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScriptCore.h; sourceTree = "<group>"; };
+		B64CE656166682700087CF94 /* JSBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBase.h; sourceTree = "<group>"; };
+		B64CE657166682700087CF94 /* JSContextRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSContextRef.h; sourceTree = "<group>"; };
+		B64CE658166682700087CF94 /* JSObjectRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSObjectRef.h; sourceTree = "<group>"; };
+		B64CE659166682700087CF94 /* JSStringRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSStringRef.h; sourceTree = "<group>"; };
+		B64CE65A166682700087CF94 /* JSStringRefCF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSStringRefCF.h; sourceTree = "<group>"; };
+		B64CE65B166682700087CF94 /* JSValueRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSValueRef.h; sourceTree = "<group>"; };
+		B64CE65C166682700087CF94 /* WebKitAvailability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebKitAvailability.h; sourceTree = "<group>"; };
+		B64CE65F166682700087CF94 /* lodepng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lodepng.c; sourceTree = "<group>"; };
+		B64CE660166682700087CF94 /* lodepng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lodepng.h; sourceTree = "<group>"; };
+		B64CE661166682700087CF94 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B64CE684166682B10087CF94 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B64CE685166682B10087CF94 /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape.png"; sourceTree = "<group>"; };
+		B64CE686166682B10087CF94 /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
+		B64CE687166682B10087CF94 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B64CE688166682B10087CF94 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B64CE689166682B10087CF94 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B64CE68A166682B10087CF94 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		B64CE68B166682B10087CF94 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		B64CE68C166682B10087CF94 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		B64CE68D166682B10087CF94 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		B64CE68E166682B10087CF94 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		B66F1E771476B3AC0090D208 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		B66F1E7F1476B6A40090D208 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		B68C5AEF132E6CD60015092E /* App */ = {isa = PBXFileReference; lastKnownFileType = folder; path = App; sourceTree = "<group>"; };
+		B6AC4A051359E7A5003C4982 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		B6CFCCD81332F152001F17AF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B6F463A31636C3FA00FC89C1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B6F9AFBE169F81D400ABD91A /* EJBindingLifecycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingLifecycle.h; sourceTree = "<group>"; };
+		B6F9AFBF169F81D400ABD91A /* EJBindingLifecycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingLifecycle.m; sourceTree = "<group>"; };
+		D03A0FC716E4293D00B3E29F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6F463A41636C3FB00FC89C1 /* SystemConfiguration.framework in Frameworks */,
+				5B7B76761619DB9700691910 /* CoreText.framework in Frameworks */,
+				B6074FF315F8E41700D987F9 /* GameKit.framework in Frameworks */,
+				B66F1E811476B6B90090D208 /* libicucore.dylib in Frameworks */,
+				B66F1E801476B6A40090D208 /* libstdc++.dylib in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				B607AB67132EA6C300D7C3EA /* OpenAL.framework in Frameworks */,
+				B607AC33132EA75F00D7C3EA /* AudioToolbox.framework in Frameworks */,
+				B607AD0A132EB51000D7C3EA /* OpenGLES.framework in Frameworks */,
+				B607AD10132EB52400D7C3EA /* QuartzCore.framework in Frameworks */,
+				B6CFCCD91332F152001F17AF /* AVFoundation.framework in Frameworks */,
+				B6AC4A061359E7A5003C4982 /* iAd.framework in Frameworks */,
+				B6243666166684420046B8C7 /* libJavaScriptCore.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* MorseRush.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				D03A0FC716E4293D00B3E29F /* Default.png */,
+				B68C5AEF132E6CD60015092E /* App */,
+				B64CE60E166682700087CF94 /* Source */,
+				B64CE683166682B10087CF94 /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B64CE60C1666825F0087CF94 /* libJavaScriptCore.a */,
+				B66F1E7F1476B6A40090D208 /* libstdc++.dylib */,
+				B66F1E771476B3AC0090D208 /* libicucore.dylib */,
+				B6F463A31636C3FA00FC89C1 /* SystemConfiguration.framework */,
+				5B7B76751619DB9700691910 /* CoreText.framework */,
+				B6074FF215F8E41600D987F9 /* GameKit.framework */,
+				B607AD0F132EB52400D7C3EA /* QuartzCore.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+				B607AB66132EA6C300D7C3EA /* OpenAL.framework */,
+				B607AC32132EA75F00D7C3EA /* AudioToolbox.framework */,
+				B607AD09132EB51000D7C3EA /* OpenGLES.framework */,
+				B6CFCCD81332F152001F17AF /* AVFoundation.framework */,
+				B6AC4A051359E7A5003C4982 /* iAd.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B64CE60E166682700087CF94 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B64CE60F166682700087CF94 /* Ejecta */,
+				B64CE652166682700087CF94 /* lib */,
+				B64CE64F166682700087CF94 /* Prefix.pch */,
+				B64CE650166682700087CF94 /* AppDelegate.h */,
+				B64CE651166682700087CF94 /* AppDelegate.m */,
+				B64CE661166682700087CF94 /* main.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		B64CE60F166682700087CF94 /* Ejecta */ = {
+			isa = PBXGroup;
+			children = (
+				B64CE612166682700087CF94 /* EJAudio */,
+				B64CE624166682700087CF94 /* EJCanvas */,
+				B64CE642166682700087CF94 /* EJUtils */,
+				B64CE610166682700087CF94 /* EJApp.h */,
+				B64CE611166682700087CF94 /* EJApp.m */,
+				B64CE61E166682700087CF94 /* EJBindingBase.h */,
+				B64CE61F166682700087CF94 /* EJBindingBase.m */,
+				B64CE622166682700087CF94 /* EJBindingEventedBase.h */,
+				B64CE623166682700087CF94 /* EJBindingEventedBase.m */,
+				B64CE620166682700087CF94 /* EJBindingEjectaCore.h */,
+				B64CE621166682700087CF94 /* EJBindingEjectaCore.m */,
+				B64CE63D166682700087CF94 /* EJConvert.h */,
+				B64CE63E166682700087CF94 /* EJConvert.m */,
+				B64CE640166682700087CF94 /* EJTimer.h */,
+				B64CE641166682700087CF94 /* EJTimer.m */,
+				B64CE63F166682700087CF94 /* Ejecta.js */,
+			);
+			path = Ejecta;
+			sourceTree = "<group>";
+		};
+		B64CE612166682700087CF94 /* EJAudio */ = {
+			isa = PBXGroup;
+			children = (
+				B64CE618166682700087CF94 /* EJBindingAudio.h */,
+				B64CE619166682700087CF94 /* EJBindingAudio.m */,
+				B64CE613166682700087CF94 /* EJAudioSource.h */,
+				B64CE614166682700087CF94 /* EJAudioSourceAVAudio.h */,
+				B64CE615166682700087CF94 /* EJAudioSourceAVAudio.m */,
+				B64CE616166682700087CF94 /* EJAudioSourceOpenAL.h */,
+				B64CE617166682700087CF94 /* EJAudioSourceOpenAL.m */,
+				B64CE61A166682700087CF94 /* EJOpenALBuffer.h */,
+				B64CE61B166682700087CF94 /* EJOpenALBuffer.m */,
+				B64CE61C166682700087CF94 /* EJOpenALManager.h */,
+				B64CE61D166682700087CF94 /* EJOpenALManager.m */,
+			);
+			path = EJAudio;
+			sourceTree = "<group>";
+		};
+		B64CE624166682700087CF94 /* EJCanvas */ = {
+			isa = PBXGroup;
+			children = (
+				B64CE627166682700087CF94 /* EJBindingCanvas.h */,
+				B64CE628166682700087CF94 /* EJBindingCanvas.m */,
+				B64CE629166682700087CF94 /* EJBindingImage.h */,
+				B64CE62A166682700087CF94 /* EJBindingImage.m */,
+				B64CE62B166682700087CF94 /* EJBindingImageData.h */,
+				B64CE62C166682700087CF94 /* EJBindingImageData.m */,
+				B64CE62D166682700087CF94 /* EJCanvasContext.h */,
+				B64CE62E166682700087CF94 /* EJCanvasContext.m */,
+				B64CE62F166682700087CF94 /* EJCanvasContextScreen.h */,
+				B64CE630166682700087CF94 /* EJCanvasContextScreen.m */,
+				B64CE631166682700087CF94 /* EJCanvasContextTexture.h */,
+				B64CE632166682700087CF94 /* EJCanvasContextTexture.m */,
+				B64CE633166682700087CF94 /* EJCanvasTypes.h */,
+				B64CE634166682700087CF94 /* EJDrawable.h */,
+				B64CE635166682700087CF94 /* EJFont.h */,
+				B64CE636166682700087CF94 /* EJFont.mm */,
+				B64CE637166682700087CF94 /* EJImageData.h */,
+				B64CE638166682700087CF94 /* EJImageData.m */,
+				B64CE639166682700087CF94 /* EJPath.h */,
+				B64CE63A166682700087CF94 /* EJPath.mm */,
+				B64CE63B166682700087CF94 /* EJTexture.h */,
+				B64CE63C166682700087CF94 /* EJTexture.m */,
+				B64CE625166682700087CF94 /* EAGLView.h */,
+				B64CE626166682700087CF94 /* EAGLView.m */,
+			);
+			path = EJCanvas;
+			sourceTree = "<group>";
+		};
+		B64CE642166682700087CF94 /* EJUtils */ = {
+			isa = PBXGroup;
+			children = (
+				B64CE643166682700087CF94 /* EJBindingAccelerometer.h */,
+				B64CE644166682700087CF94 /* EJBindingAccelerometer.m */,
+				B64CE645166682700087CF94 /* EJBindingAdBanner.h */,
+				B64CE646166682700087CF94 /* EJBindingAdBanner.m */,
+				B64CE647166682700087CF94 /* EJBindingGameCenter.h */,
+				B64CE648166682700087CF94 /* EJBindingGameCenter.m */,
+				B64CE649166682700087CF94 /* EJBindingHttpRequest.h */,
+				B64CE64A166682700087CF94 /* EJBindingHttpRequest.m */,
+				B64CE64B166682700087CF94 /* EJBindingLocalStorage.h */,
+				B64CE64C166682700087CF94 /* EJBindingLocalStorage.m */,
+				B64CE64D166682700087CF94 /* EJBindingTouchInput.h */,
+				B64CE64E166682700087CF94 /* EJBindingTouchInput.m */,
+				B6F9AFBE169F81D400ABD91A /* EJBindingLifecycle.h */,
+				B6F9AFBF169F81D400ABD91A /* EJBindingLifecycle.m */,
+			);
+			path = EJUtils;
+			sourceTree = "<group>";
+		};
+		B64CE652166682700087CF94 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				B64CE653166682700087CF94 /* JavaScriptCore */,
+				B64CE65E166682700087CF94 /* lodepng */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		B64CE653166682700087CF94 /* JavaScriptCore */ = {
+			isa = PBXGroup;
+			children = (
+				B64CE654166682700087CF94 /* JavaScript.h */,
+				B64CE655166682700087CF94 /* JavaScriptCore.h */,
+				B64CE656166682700087CF94 /* JSBase.h */,
+				B64CE657166682700087CF94 /* JSContextRef.h */,
+				B64CE658166682700087CF94 /* JSObjectRef.h */,
+				B64CE659166682700087CF94 /* JSStringRef.h */,
+				B64CE65A166682700087CF94 /* JSStringRefCF.h */,
+				B64CE65B166682700087CF94 /* JSValueRef.h */,
+				B64CE65C166682700087CF94 /* WebKitAvailability.h */,
+			);
+			path = JavaScriptCore;
+			sourceTree = "<group>";
+		};
+		B64CE65E166682700087CF94 /* lodepng */ = {
+			isa = PBXGroup;
+			children = (
+				B64CE65F166682700087CF94 /* lodepng.c */,
+				B64CE660166682700087CF94 /* lodepng.h */,
+			);
+			path = lodepng;
+			sourceTree = "<group>";
+		};
+		B64CE683166682B10087CF94 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B64CE684166682B10087CF94 /* Default-568h@2x.png */,
+				B64CE685166682B10087CF94 /* Default-Landscape.png */,
+				B64CE686166682B10087CF94 /* Default-Portrait.png */,
+				B64CE687166682B10087CF94 /* Default.png */,
+				B64CE688166682B10087CF94 /* Default@2x.png */,
+				B64CE68A166682B10087CF94 /* Icon-72.png */,
+				B64CE68B166682B10087CF94 /* Icon-72@2x.png */,
+				B64CE68C166682B10087CF94 /* Icon.png */,
+				B64CE68D166682B10087CF94 /* Icon@2x.png */,
+				B64CE689166682B10087CF94 /* Info.plist */,
+				B64CE68E166682B10087CF94 /* MainWindow.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* MorseRush */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MorseRush" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MorseRush;
+			productName = iOSImpact;
+			productReference = 1D6058910D05DD3D006BFB54 /* MorseRush.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MorseRush" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* MorseRush */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B68C5B95132E6CD60015092E /* App in Resources */,
+				B64CE68F166682B10087CF94 /* Default-568h@2x.png in Resources */,
+				B64CE690166682B10087CF94 /* Default-Landscape.png in Resources */,
+				B64CE691166682B10087CF94 /* Default-Portrait.png in Resources */,
+				B64CE692166682B10087CF94 /* Default.png in Resources */,
+				B64CE693166682B10087CF94 /* Default@2x.png in Resources */,
+				B64CE695166682B10087CF94 /* Icon-72.png in Resources */,
+				B64CE696166682B10087CF94 /* Icon-72@2x.png in Resources */,
+				B64CE697166682B10087CF94 /* Icon.png in Resources */,
+				B64CE698166682B10087CF94 /* Icon@2x.png in Resources */,
+				B64CE699166682B10087CF94 /* MainWindow.xib in Resources */,
+				B62436681666851E0046B8C7 /* Ejecta.js in Resources */,
+				D03A0FCA16E42A0C00B3E29F /* Default.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B64CE662166682700087CF94 /* EJApp.m in Sources */,
+				B64CE663166682700087CF94 /* EJAudioSourceAVAudio.m in Sources */,
+				B64CE664166682700087CF94 /* EJAudioSourceOpenAL.m in Sources */,
+				B64CE665166682700087CF94 /* EJBindingAudio.m in Sources */,
+				B64CE666166682700087CF94 /* EJOpenALBuffer.m in Sources */,
+				B64CE667166682700087CF94 /* EJOpenALManager.m in Sources */,
+				B64CE668166682700087CF94 /* EJBindingBase.m in Sources */,
+				B64CE669166682700087CF94 /* EJBindingEjectaCore.m in Sources */,
+				B64CE66A166682700087CF94 /* EJBindingEventedBase.m in Sources */,
+				B64CE66B166682700087CF94 /* EAGLView.m in Sources */,
+				B64CE66C166682700087CF94 /* EJBindingCanvas.m in Sources */,
+				B64CE66D166682700087CF94 /* EJBindingImage.m in Sources */,
+				B64CE66E166682700087CF94 /* EJBindingImageData.m in Sources */,
+				B64CE66F166682700087CF94 /* EJCanvasContext.m in Sources */,
+				B64CE670166682700087CF94 /* EJCanvasContextScreen.m in Sources */,
+				B64CE671166682700087CF94 /* EJCanvasContextTexture.m in Sources */,
+				B64CE672166682700087CF94 /* EJFont.mm in Sources */,
+				B64CE673166682700087CF94 /* EJImageData.m in Sources */,
+				B64CE674166682700087CF94 /* EJPath.mm in Sources */,
+				B64CE675166682700087CF94 /* EJTexture.m in Sources */,
+				B64CE676166682700087CF94 /* EJConvert.m in Sources */,
+				B64CE678166682700087CF94 /* EJTimer.m in Sources */,
+				B64CE679166682700087CF94 /* EJBindingAccelerometer.m in Sources */,
+				B64CE67A166682700087CF94 /* EJBindingAdBanner.m in Sources */,
+				B64CE67B166682700087CF94 /* EJBindingGameCenter.m in Sources */,
+				B64CE67C166682700087CF94 /* EJBindingHttpRequest.m in Sources */,
+				B64CE67D166682700087CF94 /* EJBindingLocalStorage.m in Sources */,
+				B64CE67E166682700087CF94 /* EJBindingTouchInput.m in Sources */,
+				B64CE67F166682700087CF94 /* AppDelegate.m in Sources */,
+				B64CE681166682700087CF94 /* lodepng.c in Sources */,
+				B64CE682166682700087CF94 /* main.m in Sources */,
+				B6F9AFC0169F81D400ABD91A /* EJBindingLifecycle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMPRESS_PNG_FILES = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Source/Prefix.pch;
+				INFOPLIST_FILE = Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Source/lib\"",
+				);
+				PRODUCT_NAME = MorseRush;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMPRESS_PNG_FILES = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Source/Prefix.pch;
+				INFOPLIST_FILE = Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Source/lib\"",
+				);
+				PRODUCT_NAME = MorseRush;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = NS_BLOCK_ASSERTIONS;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"${SOURCE_ROOT}",
+					"${SOURCE_ROOT}/Source/lib",
+				);
+				INFOPLIST_FILE = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DDEBUG";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv6 armv7";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"${SOURCE_ROOT}",
+					"${SOURCE_ROOT}/Source/lib",
+				);
+				INFOPLIST_FILE = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv6 armv7";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MorseRush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MorseRush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
